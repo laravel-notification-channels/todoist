@@ -3,12 +3,8 @@
 namespace NotificationChannels\Todoist;
 
 use GuzzleHttp\Client;
-use Illuminate\Support\Arr;
 use NotificationChannels\Todoist\Exceptions\CouldNotSendNotification;
-use NotificationChannels\Todoist\Events\MessageWasSent;
-use NotificationChannels\Todoist\Events\SendingMessage;
 use Illuminate\Notifications\Notification;
-use NotificationChannels\Todoist\Exceptions\InvalidConfiguration;
 
 class TodoistChannel
 {
@@ -44,8 +40,8 @@ class TodoistChannel
         $response = $this->client->post(self::API_ENDPOINT, [
             'form_params' => [
                 'commands' => json_encode([$command]),
-                'token' => $token
-            ]
+                'token' => $token,
+            ],
         ]);
 
         if ($response->getStatusCode() !== 200) {
