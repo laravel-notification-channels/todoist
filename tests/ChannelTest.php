@@ -2,13 +2,11 @@
 
 namespace NotificationChannels\Todoist\Test;
 
-use Illuminate\Support\Arr;
 use GuzzleHttp\Client;
 use GuzzleHttp\Psr7\Response;
 use Illuminate\Notifications\Notification;
 use Mockery;
 use NotificationChannels\Todoist\Exceptions\CouldNotSendNotification;
-use NotificationChannels\Todoist\Exceptions\InvalidConfiguration;
 use NotificationChannels\Todoist\TodoistChannel;
 use NotificationChannels\Todoist\TodoistMessage;
 use Orchestra\Testbench\TestCase;

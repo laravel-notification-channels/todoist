@@ -23,7 +23,7 @@ class TodoistMessage
     /** @var int */
     protected $itemOrder;
 
-    /** @var boolean */
+    /** @var bool */
     protected $collapsed;
 
     /** @var string|null */
@@ -176,7 +176,7 @@ class TodoistMessage
                 'priority' => $this->priority,
                 'indent' => $this->indent,
                 'collapsed' => $this->collapsed,
-            ]
+            ],
         ];
     }
 }
