@@ -52,7 +52,7 @@ class MessageTest extends \PHPUnit_Framework_TestCase
     }
 
     /** @test */
-    public function it_can_set_theitem_order()
+    public function it_can_set_the_item_order()
     {
         $this->message->itemOrder(10);
 
