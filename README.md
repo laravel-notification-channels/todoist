@@ -9,7 +9,11 @@
 [![Code Coverage](https://img.shields.io/scrutinizer/coverage/g/laravel-notification-channels/todoist/master.svg?style=flat-square)](https://scrutinizer-ci.com/g/laravel-notification-channels/todoist/?branch=master)
 [![Total Downloads](https://img.shields.io/packagist/dt/laravel-notification-channels/todoist.svg?style=flat-square)](https://packagist.org/packages/laravel-notification-channels/todoist)
 
-This package makes it easy to create [Todoist tasks](https://developer.todoist.com/) with Laravel 5.3.
+~This package makes it easy to create [Todoist tasks](https://developer.todoist.com/) with Laravel 5.3.~
+
+# Channel Deprecated
+Please see [this issue](https://github.com/laravel-notification-channels/channels/issues/67) for more infomation.  
+This channel was deprecated in Oct 2019 due to lack of a maintainer.
 
 ## Contents
 
